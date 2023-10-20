@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="webpage.js"defer></script>
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+   
+   <img class="student" src="WhatsApp Image 2023-10-19 at 7.07.27 PM.jpeg">
+   
+    
+    <div class="container">
+        <h2>Register</h2>
+        <form id="myForm" onsubmit="return validateForm()">
+            <label  for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <span class="error" id="nameError"></span><br>
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email" required><br>
+            <span class="error" id="emailError"></span><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+            <span class="error" id="passwordError"></span><br>
+    
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required><br>
+            <span class="error" id="confirmPasswordError"></span><br>
+    
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    
+    </div>
+
+ 
+</body>
+</html>
